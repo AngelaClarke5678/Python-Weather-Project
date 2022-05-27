@@ -69,7 +69,7 @@ def load_data_from_csv(csv_file):
 
     weather_data = []
 
-    with open(csv_file, encoding="utf-8") as csv_file: 
+    with open(csv_file, encoding="utf-8",) as csv_file: 
         file_reader = csv.reader(csv_file, delimiter = ",")
         next(file_reader)
         for line in file_reader: 
